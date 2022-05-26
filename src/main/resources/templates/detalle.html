@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="base :: cabecera">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contaniner-fluid">
+        <h1>Detalles de la Persona</h1>
+        <div class="row">
+            <div class="col">
+                <p th:text="'Nombre: '+${persona.Nombre}"></p>
+                <p th:text="'Apellidos: '+${persona.Apellidos}"></p>
+            </div>
+            <div class="col">
+                <img th:src="@{/imagenes/}+${persona.foto}" alt="imagen de la persona">
+            </div>
+        </div>
+    </div>
+
+
+<script th:replace="base :: scripts"></script>    
+</body>
+</html>
