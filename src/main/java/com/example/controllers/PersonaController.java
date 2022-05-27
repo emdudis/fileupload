@@ -51,10 +51,12 @@ public class PersonaController {
 
         if(!imagen.isEmpty()){
             //Ruta relativa a la carpeta static donde por defecto se almacenan los archivos:
-            Path imageFolder = Paths.get("src/main/resources/static/imagenes");
+            //Path imageFolder = Paths.get("src/main/resources/static/imagenes");
 
             //Ruta absoluta:
-            String rutaAbsoluta = imageFolder.toFile().getAbsolutePath();
+            //String rutaAbsoluta = imageFolder.toFile().getAbsolutePath();
+
+            String rutaAbsoluta = "/home/ruben/pruebas/recursos/";
 
             try {
                 byte[] imagenBytes = imagen.getBytes();
