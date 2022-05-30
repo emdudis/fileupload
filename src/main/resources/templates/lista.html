@@ -29,7 +29,7 @@
                     <td th:text="${persona.Apellidos}"></td>
                     <td th:text="${persona.Pais.Nombre}"></td>
                     <td><a th:href="@{/detalle/}+${persona.id}">Detalles</a></td>
-                    <td><a th:href="@{/alta/}+${persona.id}">Alta</a></td>
+                    <td><a th:href="@{/alta/}+${persona.id}">Modificar</a></td>
                     <td><a th:href="@{/borrar/}+${persona.id}">Borrar</a></td>
                 </tr>
             </tbody>
